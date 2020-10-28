@@ -15,7 +15,7 @@ import AnimeItem from '../../components/AnimeItem'
 
 // Controllers
 import AnimeController, { Anime } from '../../controllers/AnimesController';
-import CategoriesController from '../../controllers/CategoriesController';
+import CategoriesController, { Category } from '../../controllers/CategoriesController';
 
 // Global
 import { primaryColor } from '../../global/colors';
@@ -40,10 +40,14 @@ const SearchList: React.FC = () => {
   },[]);
 
   const loadAnimesList = async (animeName: string) => {
+    setLoadingState(true);
+
     try {
-      setLoadingState(true);
-      const queryParams = { $filter: `substringof('${animeName}', Nome)`, $orderby: 'Nome' };
-      const animes = await AnimeController.index(`http://four.zetai.info/odata/Animesdb`, queryParams);
+      const animes = await AnimeController.index(`http://four.zetai.info/odata/Animesdb`, {
+        $filter: `substringof('${animeName}', Nome)`,
+        $orderby: 'Nome'
+      });
+
       setAnimesList(animes);
     } catch (error) {
       Alert.alert(`Ocorreu um erro\n${error}`)
@@ -52,11 +56,15 @@ const SearchList: React.FC = () => {
     setLoadingState(false);
   }
 
-  const loadCategoriesList = () => {
-    CategoriesController.index().then(categories => {
+  const loadCategoriesList = async () => {
+    try {
+      const categories: Category[] = await CategoriesController.index();
+
       setSelectedCategoryFilter(categories.map(category => category.Nome));
       setCategoriesFilters(categories.map(category => category.Nome));
-    });
+    } catch (err) {
+      Alert.alert(err);
+    }
   }
 
   const loadMoreAnimes = () => {

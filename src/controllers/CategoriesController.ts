@@ -6,28 +6,11 @@ export interface Category{
 }
 
 class CategoriesController{
-  index(){
-    const preLoadedCategories = store.getState().categories;
+  async index(){
+    const response = await fetch(`http://four.zetai.info/api/categoria`);
+    const categories: Category[] = await response.json();
 
-    return new Promise<Category[]>((resolve, reject) => {
-      if(preLoadedCategories.length > 0){
-        resolve(preLoadedCategories);
-      }
-
-      fetch(`http://four.zetai.info/api/categoria`)
-        .then(response => response.json())
-        .then((data: Category[]) => {
-          store.dispatch({
-            type: 'SAVE_CATEGORIES',
-            payload: {
-              categories: data
-            }
-          });
-
-          resolve(data);
-        })
-        .catch(reject);
-    });
+    return categories;
   }
 }
 

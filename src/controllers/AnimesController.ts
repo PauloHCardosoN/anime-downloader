@@ -29,7 +29,6 @@ class AnimeController{
   async index(url: RequestInfo, parameters?: ParsedUrlQueryInput){
     url = parameters ? `${url}?${stringify(parameters)}` : url;
 
-    console.log(url)
     const response = await fetch(url);
     const data: AnimeResponse[] | AnimeDBResponse = await response.json();
     const animesResponse = "value" in data ? data.value : data;
