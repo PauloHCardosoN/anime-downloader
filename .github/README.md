@@ -135,7 +135,7 @@ Feel free to contribute to this project.
 
 ## Want to see more?
 
-* Acess my portifolio: https://paulohcardoson.github.io
+* Access my portifolio: https://paulohcardoson.github.io
 * Visit my repositories on github: https://github.com/PauloHCardosoN
 * Call me on Telegram: @PauloHCardoso
 
@@ -149,13 +149,13 @@ Feel free to contribute to this project.
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [contributors-shield]: https://img.shields.io/github/contributors/PauloHCardosoN/anime-downloader.svg?style=flat-square&color=8000FF
-[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
+[contributors-url]: https://github.com/PauloHCardosoN/anime-downloader/graphs/contributors
 
 [forks-shield]: https://img.shields.io/github/forks/PauloHCardosoN/anime-downloader.svg?&color=8000FF
 [forks-url]: https://github.com/PauloHCardosoN/anime-downloader/network/members
 
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=flat-square&color=8000FF
-[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
+[stars-shield]: https://img.shields.io/github/stars/PauloHCardosoN/anime-downloader.svg?style=flat-square&color=8000FF
+[stars-url]: https://github.com//PauloHCardosoN/anime-downloader/stargazers
 
 [issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=flat-square&color=8000FF
 [issues-url]: https://github.com/othneildrew/Best-README-Template/issues
