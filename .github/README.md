@@ -157,8 +157,8 @@ Feel free to contribute to this project.
 [stars-shield]: https://img.shields.io/github/stars/PauloHCardosoN/anime-downloader.svg?style=flat-square&color=8000FF
 [stars-url]: https://github.com//PauloHCardosoN/anime-downloader/stargazers
 
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=flat-square&color=8000FF
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
+[issues-shield]: https://img.shields.io/github/issues/PauloHCardosoN/anime-downloader.svg?style=flat-square&color=8000FF
+[issues-url]: https://github.com/PauloHCardosoN/anime-downloader/issues
 
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&color=8000FF
 [linkedin-url]: https://www.linkedin.com/in/paulohcardoson
